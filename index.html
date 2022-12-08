@@ -55,24 +55,37 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+        <p>This program does division.</p>
         <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="Computer"
-          width="25%"
-          height="25%"
-        />
+        <p>Formula:  a / b = c</p>
+        <p></p>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number-a">
+            <label class="mdl-textfield__label" for="number-a">Value A...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <p></p> 
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number-b">
+            <label class="mdl-textfield__label" for="number-b">Value B...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
         <p></p>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          Say "Hello, World!"
+          Calculate
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="hello-world"></div>
+        <div id="quotien"></div>
       </main>
     </div>
   </body>

@@ -7,7 +7,7 @@
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
@@ -16,8 +16,15 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function does division using a loop.
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+numA = document.getElementById("number-a").value
+numB = document.getElementById("number-b").value
+counter = 0
+
+while (remainder > numB){
+  remainder = remainder - numB
+  counter++
+  document.getElementById("quotient").innerHTML = "The quotient" + counter + "R" + remainder + "."
 }
+
