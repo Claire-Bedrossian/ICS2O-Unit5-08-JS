@@ -22,9 +22,9 @@ numA = document.getElementById("number-a").value
 numB = document.getElementById("number-b").value
 counter = 0
 
-while (remainder > numB){
+while (remainder > numB) {
   remainder = remainder - numB
   counter++
-  document.getElementById("quotient").innerHTML = "The quotient" + counter + "R" + remainder + "."
+  document.getElementById("quotient").innerHTML =
+    "The quotient" + counter + "R" + remainder + "."
 }
-
