@@ -23,11 +23,11 @@ function myButtonClicked() {
   var numB = parseFloat(document.getElementById("number-b").value)
   var numA = parseFloat(document.getElementById("number-a").value)
   var counter = 0
-  var = 0
+  var remainder= numA
   
-  while (remainder > numB) {
-  remainder = remainder - numB
-  counter++
-  document.getElementById("quotient").innerHTML = "The quotient" + counter + "R" + remainder + "."
+  while (remainder >= numB) {
+    remainder = remainder - numB
+    counter++    
   }
+  document.getElementById("quotient").innerHTML = "The quotient " + counter + " R " + remainder + "."
 }
