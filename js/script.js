@@ -19,15 +19,16 @@ if (navigator.serviceWorker) {
  * This function does division using a loop.
  */
 
-function myButtonClicked() { 
+function myButtonClicked() {
   var numB = parseFloat(document.getElementById("number-b").value)
   var numA = parseFloat(document.getElementById("number-a").value)
   var counter = 0
-  var remainder= numA
-  
+  var remainder = numA
+
   while (remainder >= numB) {
     remainder = remainder - numB
-    counter++    
+    counter++
   }
-  document.getElementById("quotient").innerHTML = "The quotient " + counter + " R " + remainder + "."
+  document.getElementById("quotient").innerHTML =
+    "The quotient " + counter + " R " + remainder + "."
 }
